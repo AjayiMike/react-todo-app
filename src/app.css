@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background: #dce0e4;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 500px;
+    height: 600px;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 20px #00243f;
+}
+header{
+    margin: 20px auto;
+}
+
+header h2 {
+    font-size: 45px;
+    font-variant: small-caps;
+    font-weight: bolder;
+    text-align: left;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #8f5203;
+    text-shadow: -2px 0 #264b77, 0 2px #264b77, 2px 0 #264b77, 0 -2px #264b77; 
+    letter-spacing: 3px;
+}
+
+div#main {
+    width : 100%;
+}
+
+.row {
+    width: 100%;
+    margin: 10px 4px;
+}
+
+.form-control {
+    width: 75%;
+    height: 50px;
+    border-radius: 15px;
+    outline: none;
+    border: 1px solid #264b77;
+    padding: 15px;
+    font-size: 16px;
+    margin: 0 5px 5px 0;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 4px #00243f;
+}
+
+.btn {
+    font-size: 17px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.btn-add {
+    width: 20%;
+    margin-right: 0;
+    height: 50px;
+    background-color: #00243f;
+    color: #fff;
+    transition: all 1s ease-in-out;
+    box-shadow: 0 0 4px #00243f;
+}
+
+.btn-add:hover {
+    border: 1px solid #00243f;
+    color: #00243f;
+    background: #fff;
+}
+
+#todo-container {
+    max-height: 270px;
+    min-height: 170px;
+    overflow-y: scroll;
+    border-bottom: 5px solid #00243f;
+    padding: 10px 2px;
+}
+
+.todo {
+    max-height: 65px;
+    min-height: 55px;
+    max-width: 100%;
+    color: #fff;
+    background-color: #8f5203;
+    border-radius: 5px;
+    margin: 5px 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    padding: 5px 10px;
+}
+
+.todo-text {
+    max-width: 90%;
+    font-size: 16px;
+    margin-right: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}   
+
+.todo-completed {
+    background-color: #a3acb1;
+}
+
+.del {
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    cursor: pointer;
+    padding: 0 5px;
+    transition: all 0.5s;
+    z-index: 4;
+}
+
+.del:hover {
+    background-color: #00243f;
+    color: #fff;
+    opacity: 0.6
+}
+
+.btn-completed, .btn-not-completed {
+    width: 30px;
+    height: 20px;
+    font-size: 10px;
+    padding: 0;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 4;
+    background-color: #00243f;
+    border: 1px solid #00243f;
+    color: #fff;
+}
+
+.btn-not-completed:hover {
+    
+    background-color: transparent;
+    border: 1px solid #00243f;
+    color: #00243f;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+.btn-clear-all {
+    background-color: #8f5203;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+.btn-clear-all:hover {
+    background-color: transparent;
+    color: #8f5203;
+    border: 1px solid #8f5203;
+}
+
+.btn-clear-completed {
+    background-color: #a3acb1;
+    color: #00243f;
+    transition: all 0.5s;
+}
+
+.btn-clear-completed:hover {
+    background-color: transparent;
+    color: #a3acb1;
+    border: 1px solid #a3acb1;
+}
+
+.text-muted {
+    font-size: 14px;
+    color: red;
+    text-align: center;
+}
